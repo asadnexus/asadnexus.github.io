@@ -17,7 +17,7 @@ jobs:
       - name: Generate time badge
         run: |
           mkdir -p .github
-          echo '{"schemaVersion":1,"label":"Time (Dhaka)","message":"'$(TZ="Asia/Dhaka" date +"%Y-%m-%d %H:%M:%S")'","color":"blue"}' > .github/time.json
+          echo '{"schemaVersion":1,"label":"Time (Dhaka)","message":"'$(TZ="Asia/Dhaka" date +"%I:%M:%S %p")'","color":"blue"}' > .github/time.json
       
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
