@@ -1,0 +1,27 @@
+name: Update Time Badge
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # runs every 5 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write    # allow writing/committing files
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Generate time badge
+        run: |
+          mkdir -p .github
+          echo '{"schemaVersion":1,"label":"Time (Dhaka)","message":"'$(TZ="Asia/Dhaka" date +"%Y-%m-%d %H:%M:%S")'","color":"blue"}' > .github/time.json
+      
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: "Update time badge"
