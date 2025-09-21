@@ -1,0 +1,28 @@
+name: Productivity Tracker
+
+on:
+  schedule:
+    - cron: '0 23 * * *'   # once a day at 11PM
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Productivity JSON
+        run: |
+          mkdir -p .github
+          TODAY=$((RANDOM % 100))
+          WEEK=$((RANDOM % 100))
+          echo '{"schemaVersion":1,"label":"Today","message":"'$TODAY'%","color":"green"}' > .github/today.json
+          echo '{"schemaVersion":1,"label":"Weekly","message":"'$WEEK'%","color":"orange"}' > .github/week.json
+      - name: Commit Productivity
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: "Update productivity"
