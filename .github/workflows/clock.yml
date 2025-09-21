@@ -1,0 +1,25 @@
+name: Digital Clock
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # every 5 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Clock JSON
+        run: |
+          mkdir -p .github
+          echo '{"schemaVersion":1,"label":"Time (Dhaka)","message":"'$(TZ="Asia/Dhaka" date +"%d-%b-%Y %I:%M:%S %p")'","color":"blue"}' > .github/clock.json
+      - name: Commit Clock
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: "Update clock"
