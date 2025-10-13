@@ -14,7 +14,7 @@
 ## 🕒 Real-time Digital Clock
 
 ⏰ **Current Time in Dhaka, Bangladesh:**
-Monday, October 13th, 2025, 10:27:10 AM
+
 ---
 
 ## 📊 Productivity Tracker
