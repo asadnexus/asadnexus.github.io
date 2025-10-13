@@ -1,26 +1,24 @@
-name: Update README
+name: Update README Time
 
 on:
   schedule:
-    # Runs every 5 minutes
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
+    # Proti 1 minute por por cholbe
+    - cron: '* * * * *'
+  workflow_dispatch: # Actions tab theke manually chalate parben
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Update time
-        uses: bpi-aus/waka-readme-stats@master
+      - uses: actions/checkout@v2
+      - uses: anmol098/waka-readme-stats@master # <-- Amra ei notun action-ti use korchi
         with:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHOW_TIME: "true"
           TIME_ZONE: "Asia/Dhaka"
           DATE_FORMAT: "dddd, mmmm dS, yyyy, h:MM:ss TT"
-          # The following options are needed, but we can leave them empty
-          # as we are only using this action for the time display.
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # Nicher egula dewa lagbe na, notun action-ti aro smart
+          # WAKATIME_API_KEY: "DUMMY_VALUE" 
           SHOW_PROFILE_VIEWS: "False"
           SHOW_LINES_OF_CODE: "False"
           SHOW_PROJECTS: "False"
