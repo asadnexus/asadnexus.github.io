@@ -1,30 +1,29 @@
-## 👋 Hi, I'm Asadullah Mahmud
+# 👋 Hi, I'm Asadullah Mahmud
 
-🎯 **Self-taught Python Developer & Automation Enthusiast** | Aspiring **AI Automation Engineer** 
-🚀 I build tools that save time, automate boring stuff, and solve real-world problems.
+🎯 **Self-taught Python Developer & Automation Enthusiast** | Aspiring **AI Engineer** 🚀 I build tools that save time, automate boring stuff, and solve real-world problems.
 
 ---
 
- 🌍 Profile Visitors
+## 🌍 Profile Visitors
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=asadnexus&label=Visitors&color=blue&style=flat-square)
 
 ---
 
- 🕒 Real-time Digital Clock
+## 🕒 Real-time Digital Clock
 
 ⏰ **Current Time in Dhaka, Bangladesh:**
 *No time data yet. The workflow needs to run.*
 ---
 
- 📊 Productivity Tracker
+## 📊 Productivity Tracker
 
 - ✅ **Today’s Progress:** ![Today](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/asadnexus/asadnexus/main/.github/today.json)
 - 📅 **Last 7 Days:** ![Weekly](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/asadnexus/asadnexus/main/.github/week.json)
 
 ---
 
- 🎓 Certificates & Achievements
+## 🎓 Certificates & Achievements
 
 - [Google Data Analytics Certificate](https://your-certificate-link.com)
 - [Python for Everybody – Coursera](https://your-certificate-link.com)
@@ -32,7 +31,7 @@
 
 ---
 
- 📄 CV & Experience
+## 📄 CV & Experience
 
 📌 **[Download My CV](https://drive.google.com/file/d/1lrVK44NBYWK8bt6qYaiiWbhdVXmZS541/view?usp=drivesdk)**
 - 📝 Excel / PDF automation projects
@@ -41,7 +40,7 @@
 
 ---
 
- 🚀 Featured Projects
+## 🚀 Featured Projects
 
 | Project Name          | Description                                 | GitHub Link                                                 |
 | ----------------------| ------------------------------------------- | ----------------------------------------------------------- |
@@ -59,7 +58,7 @@
 
 ---
 
- 🌐 Let's Connect
+## 🌐 Let's Connect
 
 - 🔗 [LinkedIn](https://linkedin.com/in/asadnexus)
 - 🐦 [Twitter](https://twitter.com/asadnexus37)
