@@ -1,6 +1,7 @@
 # 👋 Hi, I'm Asadullah Mahmud
 
-🎯 **Self-taught Python Developer & Automation Enthusiast** | Aspiring **AI Engineer** 🚀 I build tools that save time, automate boring stuff, and solve real-world problems.
+🎯 **Self-taught Python Developer & Automation Enthusiast** | Aspiring **AI Engineer** 
+🚀 I build tools that save time, automate boring stuff, and solve real-world problems.
 
 ---
 
@@ -13,7 +14,7 @@
 ## 🕒 Real-time Digital Clock
 
 ⏰ **Current Time in Dhaka, Bangladesh:**
-*No time data yet. The workflow needs to run.*
+Monday, October 13th, 2025, 10:27:10 AM
 ---
 
 ## 📊 Productivity Tracker
